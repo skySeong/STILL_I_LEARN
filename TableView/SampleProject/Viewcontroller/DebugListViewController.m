@@ -13,7 +13,7 @@
 #import "LocateInfoViewController.h"
 #import "TestViewController.h"
 #import "DragViewController.h"
-#import "CalendarViewController.h"
+//#import "CalendarViewController.h"
 
 #import <MobileCoreServices/MobileCoreServices.h>
 #import <MediaPlayer/MediaPlayer.h>
@@ -116,7 +116,7 @@
                            @[
                                @{@"name" : @"테스트1", @"index" : @"0",@"subtitle":@"ScrollView"},
                                @{@"name" : @"테스트2", @"index" : @"1",@"subtitle":@"Drag and Drop"},
-                               @{@"name" : @"테스트3", @"index" : @"2",@"subtitle":@"Calendar"},
+//                               @{@"name" : @"테스트3", @"index" : @"2",@"subtitle":@"Calendar"},
                                ]
                            ],
                        
@@ -347,10 +347,10 @@
         }
         if([indexStr isEqualToString:@"2"])
         {
-            // 캘린더
-            CalendarViewController* calendarVC = [[CalendarViewController alloc] initWithNibName:@"CalendarViewController" bundle:nil];
-            
-            [self.navigationController pushViewController:calendarVC animated:YES];
+//            // 캘린더
+//            CalendarViewController* calendarVC = [[CalendarViewController alloc] initWithNibName:@"CalendarViewController" bundle:nil];
+//            
+//            [self.navigationController pushViewController:calendarVC animated:YES];
         }
     }
     else
