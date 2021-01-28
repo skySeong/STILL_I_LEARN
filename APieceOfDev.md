@@ -10,11 +10,11 @@
 - ReadWrite : Default, setter, getter
 - Weak : UI 단에 영향
 
-## Q. 왜 primitive type int type은 ARC strong, retain type 선언이 안될까?
+## Q. 왜 primitive type int type은 ARC strong, retain 선언이 안될까?
 ### A. heap과 stack 의 메모리 할당 영역이 다름.
 int, float, double...과 같은 자료 원시형 타입은 메모리 할당 타입이 필요가 없다.
 property 선언 시 strong type으로 선언할 경우 error 발생.
-원시형 타입은 스택영역의 메모리를 참조는데, 스택 영역은 기본 타입이 assign이기 때문에 strong type을 선언하게 되면 메모리 할당영역이 달라 에러가 난다.
+원시형 타입은 스택영역의 메모리를 참조는데, 스택 영역은 기본 타입이 assign이기 때문에 strong 선언하게 되면 메모리 할당영역이 달라 에러가 난다.
 (굳이 type을 선언할 필요가 없다)
 
 * 메모리 참조(스택과 힙)
